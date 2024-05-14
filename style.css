@@ -2,7 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #fada96, #592be0);
+    background: rgb(102,59,229);
+    background: linear-gradient(161deg, rgba(102,59,229,1) 33%, rgba(242,177,22,1) 100%);
 }
 
 header {
@@ -14,18 +15,18 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #3500D3;
+    background-color: #10182b;
     color: white;
-    border-radius: 20px;
-    width: 80%;
+    border-radius: 40px;
+    width: 70%;
     margin: 0 auto;
     position: relative;
-    top: 20px;
+    top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -46,27 +47,48 @@ nav ul li a {
 }
 
 .buttons .btn {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.2rem;
     margin-left: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
+.btn-hero {
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    justify-content: left;
+}
+.btn-hero:hover {
+    background: yellow;
+}
+.hero-buttons {
+    justify-content: left;
+}
 .highlight {
-    background-color: #FFD700;
+    background-color: #ffffff;
 }
 
 .hero {
     padding: 2rem;
     color: white;
-    text-align: center;
-}
 
+}
+h1 {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
 .hero h1 {
     margin-top: 0;
 }
-
+.title {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
 .dashboard {
     display: flex;
     justify-content: space-around;
@@ -84,7 +106,7 @@ nav ul li a {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #ff0000;
+    background-color: #582ecb;
     color: white;
     margin-top: 20px;
 }

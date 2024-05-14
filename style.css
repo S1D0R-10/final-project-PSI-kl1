@@ -139,7 +139,7 @@ nav ul li a {
     padding-top: 12%;
 
 }
-h1 {
+.h1-firstpage {
     font-size: 3.5rem;
     padding: 0;
     margin: 0;
@@ -165,7 +165,20 @@ h1 {
     width: 200px;
     text-align: center;
 }
-
+.why-we {
+    background-color: rgb(15, 23, 42);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.h1-why-we {
+    color: #fdfdfd;
+    margin: 0;
+    font-size: 2.5rem;
+}
+.why-we-discription {
+    padding: 8rem;
+}
 footer {
     text-align: center;
     padding: 1rem;

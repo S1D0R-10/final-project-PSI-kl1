@@ -231,8 +231,8 @@ nav ul li a {
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
-    align-items: center; /* Wyśrodkowanie zawartości w pionie */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;

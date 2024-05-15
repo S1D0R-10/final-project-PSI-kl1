@@ -170,6 +170,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
 }
 .h1-why-we {
     color: #fdfdfd;
@@ -178,6 +179,28 @@ nav ul li a {
 }
 .why-we-discription {
     padding: 8rem;
+}
+.smiling-people {
+    width: 34%;
+    height: auto;
+    align-self: center;
+    position: absolute;
+    border-radius: 10px;
+}
+.left-side {
+    width: 40%;
+}
+.right-side {
+    width: 60%;
+}
+.left-side-content {
+    text-align: center;
+    max-width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50%;
 }
 footer {
     text-align: center;

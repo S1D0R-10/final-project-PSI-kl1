@@ -13,11 +13,9 @@ function prevSlide() {
 }
 
 function updateSlidePosition() {
-    const offset = -currentSlide * 100; // Przesunięcie slajdu o 100% szerokości
+    const offset = -currentSlide * 100;
     slidesContainer.style.transform = `translateX(${offset}%)`;
 }
 
-setInterval(nextSlide, 5000); // Zmienia slajd co 3 sekundy
-
-// Inicjalizacja pierwszego slajdu
+setInterval(nextSlide, 3000);
 updateSlidePosition();

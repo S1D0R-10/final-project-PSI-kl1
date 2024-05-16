@@ -127,15 +127,6 @@ nav ul li a {
     margin-left: 2rem;
     margin-top: 2rem;
 }
-.container {
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 7rem;
-}
-
 .square {
     width: 25rem;
     height: 28rem;
@@ -150,6 +141,12 @@ nav ul li a {
 .download-icon {
     transform: scale(0.5);
 }
+.iframe {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 footer {
     text-align: center;
     padding: 1rem;

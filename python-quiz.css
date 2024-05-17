@@ -5,7 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: rgb(102,59,229);
+    background: linear-gradient(161deg, rgba(102,59,229,1) 33%, rgba(242,177,22,1) 100%);
 }
 
 #quiz-container {
@@ -13,7 +14,7 @@ body {
 }
 
 .card {
-    width: 300px;
+    width: 50vh;
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
@@ -29,9 +30,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -42,12 +42,15 @@ body {
 .card.flipped {
     transform: rotateY(180deg);
 }
-
+#odpowiedzi {
+    gap: 10px;
+    display: flex;
+}
 button {
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
-    background-color: #007BFF;
+    background-color: rgba(255, 0, 0, 0.76);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;

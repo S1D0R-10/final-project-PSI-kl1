@@ -1,17 +1,34 @@
 const pytania = [
     {
-        pytanie: "Jaka jest stolica Polski?",
-        odpowiedzi: ["Warszawa", "Kraków", "Gdańsk", "Wrocław"],
-        poprawna: "Warszawa",
-        podpowiedz: "To miasto jest również największym miastem w Polsce."
+        pytanie: "Jak definiujemy funkcje ?",
+        odpowiedzi: ["def", "dof", "deffin", "dedif"],
+        poprawna: "def",
+        podpowiedz: "jest to skrót od słowa deffine z ang definiowac"
     },
     {
-        pytanie: "Ile to 2 + 2?",
-        odpowiedzi: ["3", "4", "5", "6"],
-        poprawna: "4",
-        podpowiedz: "To wynik dodawania dwóch liczb."
-    }
-    // Dodaj więcej pytań tutaj
+        pytanie: "jak obliczyć długość listy ?",
+        odpowiedzi: ["len", "count", "licz", "lon"],
+        poprawna: "len",
+        podpowiedz: "Zaczyna sie na len"
+    },
+    {
+        pytanie: "jak wypisac tekst w py ?",
+        odpowiedzi: ["alert", "print", "prn", "lnr"],
+        poprawna: "print",
+        podpowiedz: "z ang. Drukuj"
+    },
+    {
+        pytanie: "Jak utworzyć zmienna ?",
+        odpowiedzi: ["x - 10", "x / 10", "x = 10", "x ; 10"],
+        poprawna: "x = 10",
+        podpowiedz: "{nazwa zmiennej} = {nasza wartość}"
+    },
+    {
+        pytanie: "jeden z programow do edycji py",
+        odpowiedzi: ["pycharm", "webstrom", "cmd", "terminal"],
+        poprawna: "pycharm",
+        podpowiedz: "zaczyna sie na p xD"
+    },
 ];
 
 let aktualnePytanie = 0;
@@ -42,7 +59,7 @@ function sprawdzOdpowiedz(odpowiedz) {
         if (aktualnePytanie < pytania.length) {
             pokazPytanie();
         } else {
-            alert("Koniec quizu!");
+            alert("Koniec quizu wróc na strone główną");
         }
     } else {
         podpowiedzElem.textContent = pytanie.podpowiedz;

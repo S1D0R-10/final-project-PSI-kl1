@@ -1,0 +1,168 @@
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+.first-page {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header {
+    padding: 20px 0;
+
+}
+.first-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #10182b;
+    color: white;
+    border-radius: 40px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttons .btn {
+    padding: 0.7rem 1.2rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover {
+    background: #10182b;
+    color: #F0F0F0;
+}
+.btn-hero {
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    justify-content: left;
+    border-radius: 50px;
+
+}
+.btn-hero:hover {
+    background: #10182b;
+    color: #F0F0F0;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+
+}
+.h1-firstpage {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    margin-top: 5rem;
+}
+.title {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.container {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.square {
+    width: 25rem;
+    height: 28rem;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 25px;
+    transition: 0.35s ease-in-out;
+}
+.square:hover{
+    background: rgba(255, 255, 255, 0.79);
+    cursor: pointer;
+}
+.download-icon {
+    width: 70%;
+}
+.a {
+    text-decoration: none;
+    color: black;
+}
+canvas {
+    background-color: rgba(255, 255, 255, 0.55);
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #582ecb;
+    color: white;
+}

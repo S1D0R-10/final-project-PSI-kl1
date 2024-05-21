@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oniline Teaching Center</title>
-    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="canvas.css">
     <link rel="icon" href="index-photos/favicon.png">
 </head>
 <body>
@@ -25,22 +25,12 @@
             <div class="first-page-content">
                 <div class="hero">
                     <div class="title">
-                        <h1 class="h1-firstpage" style="justify-content: center">Kursy</h1>
+                        <h1 class="h1-firstpage" style="justify-content: center">Naucz sie Canvasa</h1>
                     </div>
                 </div>
                 <div class="container">
-                    <a href="./python.html" class="a">
-                        <div class="square">
-                            <img class="download-icon" src="./courses-photos/Python.png">
-                            <h1>Kurs Python</h1>
-                        </div>
-                    </a>
-                    <a href="./canvas.html" class="a">
-                        <div class="square">
-                            <img class="download-icon" src="./courses-photos/JS.png" style="width: 70%; margin-top: 10%">
-                            <h1>Kurs canvas</h1>
-                        </div>
-                    </a>
+                    <canvas id="mojeCanvas" width="800" height="600"></canvas>
+                    <script src="canvas.js"></script>
                 </div>
             </div>
         </header>

@@ -1,3 +1,105 @@
+@media (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+        width: 90%;
+    }
+    .hero {
+        padding: 4rem;
+    }
+    .why-we-discription {
+        padding: 4rem;
+    }
+    .rectangle {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    .hero-buttons {
+        transform: scale(1.1);
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Styl dla ekranów o szerokości do 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons {
+        margin-top: 1rem;
+    }
+    .first-page-content {
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .title {
+        width: 80vw;
+    }
+    .scroll-down-arrow {
+        width: 40px;
+    }
+    .hero {
+        padding: 2rem;
+    }
+    .why-we {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .why-we-discription, .left-side-content {
+        width: 100%;
+        padding: 1rem;
+    }
+    .smiling-people {
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .left-side-wrapper {
+        margin-top: 2rem;
+        scale: 1;
+    }
+}
+
+/* Styl dla ekranów o szerokości do 480px */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .buttons .btn {
+        padding: 0.5rem 1rem;
+    }
+    .h1-firstpage {
+        font-size: 2rem;
+    }
+    .hero-buttons {
+        transform: scale(1);
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .btn-hero {
+        padding: 0.6rem 1rem;
+    }
+    .why-we-discription {
+        padding: 2rem;
+    }
+    .left-side-content {
+        padding: 1rem;
+    }
+    .left-side-wrapper {
+        scale: 1;
+        margin-top: 5%;
+    }
+    .rectangle {
+        padding: 1rem;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;

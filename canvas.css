@@ -24,8 +24,8 @@ body, html {
     font-family: Arial, sans-serif;
     width: 100%;
     overflow-x: hidden;
-
 }
+
 .first-page {
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -33,17 +33,18 @@ body, html {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
 header {
     padding: 20px 0;
-
 }
+
 .first-page-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -60,9 +61,10 @@ nav {
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -70,6 +72,8 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 nav ul li {
@@ -81,6 +85,11 @@ nav ul li a {
     text-decoration: none;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .buttons .btn {
     padding: 0.7rem 1.2rem;
     margin-left: 10px;
@@ -89,10 +98,12 @@ nav ul li a {
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+
 .btn:hover {
     background: #10182b;
     color: #F0F0F0;
 }
+
 .btn-hero {
     border: none;
     padding: 0.8rem 1.4rem;
@@ -101,8 +112,8 @@ nav ul li a {
     transition: 0.2s ease-in-out;
     justify-content: left;
     border-radius: 50px;
-
 }
+
 .btn-hero:hover {
     background: #10182b;
     color: #F0F0F0;
@@ -111,8 +122,8 @@ nav ul li a {
 .hero {
     color: white;
     text-align: center;
-
 }
+
 .h1-firstpage {
     font-size: 3.5rem;
     padding: 0;
@@ -120,13 +131,16 @@ nav ul li a {
     display: flex;
     align-items: center;
 }
+
 .hero h1 {
     margin-top: 5rem;
 }
+
 .title {
     margin-left: 2rem;
     margin-top: 2rem;
 }
+
 .container {
     display: flex;
     gap: 5rem;
@@ -143,26 +157,223 @@ nav ul li a {
     border-radius: 25px;
     transition: 0.35s ease-in-out;
 }
-.square:hover{
+
+.square:hover {
     background: rgba(255, 255, 255, 0.79);
     cursor: pointer;
 }
+
 .download-icon {
     width: 70%;
 }
+
 .a {
     text-decoration: none;
     color: black;
 }
+
 canvas {
     background-color: rgba(255, 255, 255, 0.55);
     display: block;
     margin: 0 auto;
     border-radius: 20px;
 }
+
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #582ecb;
     color: white;
+}
+
+.dark-mode-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+
+.dark-mode nav,
+.dark-mode .buttons .btn,
+.dark-mode .btn-hero,
+.dark-mode .square,
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .btn:hover,
+.dark-mode .btn-hero:hover {
+    background-color: #555;
+    color: #f0f0f0;
+}
+.dark-mode canvas {
+    background-color: rgba(16, 24, 43, 0.76);
+}
+.dark-mode .first-page {
+    background: rgb(19, 37, 115);
+    background: radial-gradient(circle, rgb(18, 33, 105) 0%, rgb(105, 14, 33) 100%);
+}
+
+@media (max-width: 1200px) {
+    nav {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .h1-firstpage {
+        font-size: 2.5rem;
+    }
+
+    .square {
+        width: 20rem;
+        height: 23rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    canvas {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .h1-firstpage {
+        font-size: 2rem;
+    }
+
+    .square {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    .h1-firstpage {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+
+    .square {
+        width: 15rem;
+        height: 18rem;
+    }
+
+    .buttons .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-hero {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .btn-hero:hover {
+        background: #10182b;
+        color: #F0F0F0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
 }

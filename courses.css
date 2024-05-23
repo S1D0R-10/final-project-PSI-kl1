@@ -18,6 +18,102 @@
     background: #555;
 }
 
+@media (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+        width: 90%;
+    }
+    .hero {
+        padding: 4rem;
+    }
+    .hero-buttons {
+        transform: scale(1.1);
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .container {
+        transform: scale(0.8);
+    }
+    .hero h1 {
+        display: none;
+    }
+}
+
+/* Styl dla ekranów o szerokości do 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons {
+        margin-top: 1rem;
+    }
+    .first-page-content {
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .btn-hero{
+        white-space: nowrap;
+    }
+}
+@media  (max-width: 675px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-page-content {
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.8);
+        margin-top: -23vh;
+    }
+}
+
+/* Styl dla ekranów o szerokości do 480px */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+    ul {
+        gap: 2vh;
+
+    }
+    .ul-buttons{
+        margin-top: 1vh;
+    }
+    .buttons .btn {
+        padding: 0;
+    }
+    .hero{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vh;
+    }
+    .hero-buttons {
+        transform: scale(1);
+        flex-direction: column;
+        gap: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .btn-hero {
+        padding: 0;
+    }
+    .container{
+        padding: -10vh;
+    }
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -122,6 +218,7 @@ nav ul li a {
 }
 .hero h1 {
     margin-top: 5rem;
+    margin-bottom: 10vh;
 }
 .title {
     margin-left: 2rem;
@@ -133,7 +230,6 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 7rem;
 }
 
 .square {
@@ -154,6 +250,88 @@ nav ul li a {
     text-decoration: none;
     color: black;
 }
+
+/* courses.css */
+/* Styl przełącznika */
+.dark-mode-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav,
+.dark-mode .buttons .btn,
+.dark-mode .btn-hero,
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+.dark-mode .square {
+    background-color: rgba(218, 207, 207, 0.63);
+}
+.dark-mode .first-page {
+    background: rgb(19, 37, 115);
+    background: radial-gradient(circle, rgb(18, 33, 105) 0%, rgb(105, 14, 33) 100%);
+}
+.dark-mode .btn:hover,
+.dark-mode .btn-hero:hover {
+    background-color: #555;
+    color: #f0f0f0;
+}
+
+
 footer {
     text-align: center;
     padding: 1rem;

@@ -21,7 +21,7 @@
     }
 }
 
-/* Styl dla ekranów o szerokości do 768px */
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -53,48 +53,102 @@
         width: 100%;
         padding: 1rem;
     }
+    .why-we-discription{
+        margin-left: -13vh;
+    }
     .smiling-people {
         width: 80%;
         margin-top: 1rem;
+        margin-left: -10vh;
     }
+
     .left-side-wrapper {
         margin-top: 2rem;
         scale: 1;
     }
+    .left-side-content p{
+        display: none;
+    }
+    .left-side-mini-wrapper{
+        margin-left: 6vh;
+    }
+    .btn-hero{
+        white-space: nowrap;
+    }
 }
 
-/* Styl dla ekranów o szerokości do 480px */
+
 @media (max-width: 480px) {
     .logo {
         font-size: 1rem;
     }
+
     nav ul li {
         margin: 0 10px;
     }
-    .buttons .btn {
-        padding: 0.5rem 1rem;
+    ul {
+        gap: 2vh;
+
     }
+    .ul-buttons{
+        margin-top: 1vh;
+    }
+    .buttons .btn {
+        padding: 0;
+    }
+
     .h1-firstpage {
         font-size: 2rem;
+    }
+    .hero{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vh;
     }
     .hero-buttons {
         transform: scale(1);
         flex-direction: column;
         gap: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
+
+    .mini-wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50vh;
+        margin-right: 3vh;
+    }
+
     .btn-hero {
-        padding: 0.6rem 1rem;
+        padding: 0;
     }
     .why-we-discription {
-        padding: 2rem;
+        padding: 10vh;
+        margin-left: -13vh;
+        margin-top: 20vh;
+    }
+    .smiling-people {
+        visibility: hidden;
     }
     .left-side-content {
-        padding: 1rem;
+        visibility: hidden;
+        padding: 2rem;
     }
+
     .left-side-wrapper {
         scale: 1;
         margin-top: 5%;
     }
+
     .rectangle {
         padding: 1rem;
     }
@@ -322,7 +376,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(15, 23, 42); /* Lekkie szare tło dla kontrastu */
+    background-color: rgb(15, 23, 42);
     font-family: Arial, sans-serif;
     padding: 8vh;
 }
@@ -338,6 +392,86 @@ nav ul li a {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.dark-mode-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode nav,
+.dark-mode .buttons .btn,
+.dark-mode .btn-hero,
+.dark-mode .square,
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .btn:hover,
+.dark-mode .btn-hero:hover {
+    background-color: #555;
+    color: #f0f0f0;
+}
+.dark-mode .first-page{
+    background: rgb(52, 29, 133);
+    background: linear-gradient(161deg, rgb(43, 21, 108) 33%, rgb(117, 85, 14) 100%);
+}
+.dark-mode .rectangle {
+    background: rgb(19, 37, 115);
+    background: radial-gradient(circle, rgb(18, 33, 105) 0%, rgb(105, 14, 33) 100%);
 }
 footer {
     text-align: center;
